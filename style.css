@@ -1,11 +1,66 @@
-body{
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  background-color: ;
+}
+
+header {
+  font-family: "Courgette", cursive;
+  margin: 0px;
+  padding: 0px;
 }
 
 .header-title {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+  background-color: #1E392A;
+}
+
+.header-title-link {
+  text-decoration: none;
+  color: #3CC47C;
+  background-color: ;
+}
+
+.main-content {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.main-content-image {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 150px;
+  width: 150px;
+}
+
+.main-content-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content-title-heading {
+  font-family: "Courgette", cursive;
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+  padding: 5px;
+  color: #1E392A;
+}
+
+.main-content-paragraph {
+    margin: 10px;
+    padding: 0px;
+    color: #828081;
+}
+
+.main-content-list {
+    list-style: none;
+    color: #828081;
 }
