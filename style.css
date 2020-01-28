@@ -5,6 +5,8 @@ body {
   padding: 0;
   font-family: "Fira Sans Extra Condensed", sans-serif;
   background-image: url("https://www.worldatlas.com/r/w728-h425-c728x425/upload/70/32/73/shutterstock-310887800.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100vh;
 }
 
 header {
@@ -17,6 +19,10 @@ header {
   display: flex;
   justify-content: center;
   background-color: #1E392A;
+  margin: 0;
+}
+
+.header-container {
 }
 
 .header-title-link {
@@ -25,20 +31,8 @@ header {
   justify-content: center;
   padding: 0;
   margin: 0;
-  
 }
 
-.header-navigation-list-buy{
-  display: none;
-  visibility: hidden;
-}
-.header-navigation-list-sell {
-  display: none;
-}
-
-.header-navigation-list-forum {
-  display: none;
-}
 .main-content {
 display: flex;
 flex-direction: column;
@@ -48,11 +42,12 @@ align-items: center;
 
 .main-content-image {
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
-  height: 200px;
+  height: 150px;
   width: 150px;
-  border-radius: 60px;
+  border-radius: 10px;
+  margin-top: 20px;
 }
 
 .main-content-section {
@@ -64,15 +59,23 @@ align-items: center;
   font-family: "Courgette", cursive;
   display: flex;
   justify-content: center;
-  margin: 5px;
-  padding: 5px;
+  margin: 10px;
+  padding: 10px;
   color: #1E392A;
+  border-radius: 20px;
+  background-color: #828081;
+  width: 130px;
+  text-align: center;
 }
 
 .main-content-paragraph {
     margin: 10px;
     padding: 10px;
     color: #1E392A;
+    background-color: #E9C893;
+    border-radius: 20px;
+    
+    
 }
 
 .main-content-list {
@@ -80,114 +83,134 @@ align-items: center;
     color: #1E392A;
     margin: 10px;
     padding: 10px;
+    
 }
 
 .purchase {
     color:  #3CC47C ;
 }
 
-@media only screen and (min-width:768px){
-    body {
-        display: flex;
-        flex-direction: column;
-        margin: 0;
-        padding: 0;
-        font-family: "Fira Sans Extra Condensed", sans-serif;
-        position: absolute;
-        background-image: url("https://usatunofficial.files.wordpress.com/2012/03/canadian_rockies_beauty_wallpaper_g7zor.jpg?w=1000&h=600&crop=1");
-        background-repeat:no-repeat;
-        background-size:100% 100vh;
+@media only screen and (min-width:768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    font-family: "Fira Sans Extra Condensed", sans-serif;
+    position: absolute;
+    background-image: url("https://www.worldatlas.com/r/w728-h425-c728x425/upload/70/32/73/shutterstock-310887800.jpg");
+    background-repeat:no-repeat;
+    background-size:100% 100vh;
 }
-      }
-      
-      header {
-        font-family: "Courgette", cursive;
-        margin: 0px;
-        padding: 0px;
-      }
-      .header-container{
-        border-back
-        background-color: #828081;
-      }
-      
-      .header-title {
-        display: flex;
-        justify-content: center;
-        background-color: #1E392A;
-      }
-      
-      .header-title-link {
-        text-decoration: none;
-        color: #3CC47C;
-        background-color: ;
-      }
-      .header-navigation{
-          display: flex;
-          justify-content: flex-end;
-          text-decoration: none;
-          /* flex-direction: column; */
-      }
-
-      .header-navigation-list {
-          display: flex;
-          text-decoration: none;
-          flex-direction: column;
-      }
-
-      .header-navigation-list-item {
-          display: flex;
-          text-decoration: none;
-          flex-direction: column;
-      }
-      
-      .main-content {
+  
+  
+  header {
+    font-family: "Courgette", cursive;
+    margin: 0px;
+    padding: 0px;
+  }
+  .header-container{
+    }
+  
+  .header-title {
+    display: flex;
+    justify-content: center;
+    background-color: #1E392A;
+  }
+  
+  .header-title-link {
+    text-decoration: none;
+    /* color: #3CC47C; */
+    
+  }
+  .header-navigation{
       display: flex;
+      justify-content: flex-end;
+      text-decoration: none;
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      }
-      
-      .main-content-image {
-        justify-content: flex-start;
-        align-items: flex-start;
-        flex-direction: column;
-        height: 150px;
-        width: 150px;
-        margin-top: 20px;
-      }
-      
-      .main-content-section {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-      }
-      
-      .main-content-title-heading {
-        font-family: "Courgette", cursive;
-        display: flex;
-        justify-content: flex-start;
-        margin-left: 10px;
-        padding: 5px;
-        color: #1E392A;
-        
-        
-      }
-      
-      .main-content-paragraph {
-          margin: 10px;
-          padding: 10px;
-          color: #828081;
-      }
-      
-      .main-content-list {
-          list-style: none;
-          color: #828081;
-          margin: 10px;
-          padding: 10px;   
-      }
-      
-      .purchase {
-          color:  #3CC47C ;
-      }
-      
+  }
+
+  .header-navigation-list {
+      display: flex;
+      text-decoration: none;
+      flex-direction: column;
+  }
+
+  .header-navigation-list-item {
+      display: flex;
+      text-decoration: none;
+      flex-direction: column;
+      padding: 10px;
+      margin: 10px;
+  }
+  
+  .main-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  }
+  
+  .main-content-image {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 150px;
+    width: 150px;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  
+  .main-content-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  .main-content-title-heading {
+    font-family: "Courgette", cursive;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    color: #1E392A;
+    border-radius: 20px;
+    background-color: #828081;
+    width: 130px;
+    text-align: center;
+   
+  }
+  
+  .main-content-paragraph {
+    margin: 10px;
+    padding: 10px;
+    color: #1E392A;
+    background-color: #E9C893;
+    border-radius: 20px;
+  }
+  
+  .main-content-list {
+      display: flex;
+      list-style: none;
+      color: #828081;
+      margin: 10px;
+      padding: 10px;
+      background-color: #E9C893;
+      border-radius: 10px;   
+  }
+  
+  .purchase {
+      color:  #3CC47C;
+      margin-right: 10px;
+  }
+
+  .main-content-navigation {
+    display: flex;
+    list-style: none;
+  }
+
+  .main-content-navigation-link {
+    display: flex;
+  }
 }
