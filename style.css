@@ -47,7 +47,7 @@ align-items: center;
   flex-direction: column;
   height: 150px;
   width: 150px;
-  border-radius: 10px;
+  border-radius: 20px;
   margin-top: 20px;
 }
 
@@ -93,10 +93,55 @@ align-items: center;
     color:  #3CC47C ;
 }
 
+.footer {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  height: auto;
+}
+
+.footer-list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #E9C893;
+  border-radius: 20px;
+  
+}
+
+.footer-list-item {
+  display: flex;
+  padding-left: 10px;
+  padding-right: 10px;
+  bottom: 20px;
+}
+
+
+.footer-list-item-buy{
+  display: flex;
+  text-decoration: none;
+  color: #3CC47C;
+  
+}
+
+.footer-list-item-sell{
+  display: flex;
+  text-decoration: none;
+  color: #3CC47C;
+}
+.footer-list-item-forum{
+  display: flex;
+  text-decoration: none;
+  color: #3CC47C;
+  
+}
+
 @media only screen and (min-width:768px) {
   body {
     display: flex;
-    flex-direction: column;
     margin: 0;
     padding: 0;
     font-family: "Fira Sans Extra Condensed", sans-serif;
@@ -168,7 +213,7 @@ align-items: center;
   
   .main-content-section {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: flex-start;
   }
   
@@ -216,5 +261,50 @@ align-items: center;
 
   .main-content-navigation-link {
     display: flex;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    height: auto;
+  }
+
+  .footer-list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #E9C893;
+    border-radius: 20px;
+    
+  }
+
+  .footer-list-item {
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+    bottom: 20px;
+  }
+
+  .footer-list-item-buy{
+    display: flex;
+    text-decoration: none;
+    color: #3CC47C;
+    
+  }
+
+  .footer-list-item-sell{
+    display: flex;
+    text-decoration: none;
+    color: #3CC47C;
+  }
+  .footer-list-item-forum{
+    display: flex;
+    text-decoration: none;
+    color: #3CC47C;
+    
   }
 }
