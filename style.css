@@ -1,12 +1,16 @@
 body {
   display: flex;
   flex-direction: column;
-  margin: 0;
-  padding: 0;
   font-family: "Fira Sans Extra Condensed", sans-serif;
-  background-image: url("https://www.worldatlas.com/r/w728-h425-c728x425/upload/70/32/73/shutterstock-310887800.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% 100vh;
+  background: url("https://www.worldatlas.com/r/w728-h425-c728x425/upload/70/32/73/shutterstock-310887800.jpg")
+    no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  width: 100vw;
+  margin: 0px;
 }
 
 header {
@@ -16,39 +20,41 @@ header {
   width: auto;
 }
 
+.img-holder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .header-title {
   display: flex;
   justify-content: center;
-  background-color: #1E392A;
+  background-color: #1e392a;
   margin: 0;
-}
-
-.header-container {
 }
 
 .header-title-link {
   text-decoration: none;
-  color: #3CC47C;
+  color: #3cc47c;
   justify-content: center;
   padding: 0;
   margin: 0;
 }
 
 .main-content {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .main-content-image {
   justify-content: center;
-  align-items: flex-start;
   flex-direction: column;
-  height: 150px;
-  width: 150px;
+  height: 30%;
+  width: 30%;
   border-radius: 20px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .main-content-section {
@@ -58,45 +64,48 @@ align-items: center;
 
 .main-content-title-heading {
   font-family: "Courgette", cursive;
+  font-size: 16px;
   display: flex;
   justify-content: center;
   margin: 10px;
   padding: 10px;
-  color: #1E392A;
+  color: #1e392a;
   border-radius: 20px;
-  background-color: #828081;
-  width: 130px;
+  background-color: rgba(130, 128, 129, 0.755);
   text-align: center;
+  width: 25%;
 }
 
 .main-content-paragraph {
-    margin: 10px;
-    padding: 10px;
-    color: #1E392A;
-    background-color: #E9C893;
-    border-radius: 20px;
-    
-    
+  margin: 10px;
+  padding: 10px;
+  color: #1e392a;
+  background-color: #e9c893c8;
+  border-radius: 20px;
 }
 
 .main-content-list {
-    list-style: none;
-    color: #1E392A;
-    margin: 10px;
-    padding: 10px;
-    background-color: #E9C893;
-    border-radius: 20px;
-    
+  list-style: none;
+  color: #1e392a;
+  margin: 10px;
+  padding: 10px;
+  background-color: #e9c893c8;
+  border-radius: 20px;
+}
+
+.item {
+  text-decoration: underline;
 }
 
 .purchase {
-    color:  #3CC47C ;
+  color: #3cc47c;
+  list-style: none;
 }
 
 .footer {
   display: flex;
   justify-content: center;
-  margin: 0;
+  margin-bottom: 10px;
   padding: 0;
   height: auto;
 }
@@ -107,9 +116,8 @@ align-items: center;
   list-style: none;
   margin: 0;
   padding: 0;
-  background-color: #E9C893;
+  background-color: #e9c893c8;
   border-radius: 20px;
-  
 }
 
 .footer-list-item {
@@ -119,139 +127,135 @@ align-items: center;
   bottom: 20px;
 }
 
-
-.footer-list-item-buy{
+.footer-list-item-buy {
   display: flex;
   text-decoration: none;
-  color: #3CC47C;
-  
+  color: #3cc47c;
 }
 
-.footer-list-item-sell{
+.footer-list-item-sell {
   display: flex;
   text-decoration: none;
-  color: #3CC47C;
+  color: #3cc47c;
 }
-.footer-list-item-forum{
+.footer-list-item-forum {
   display: flex;
   text-decoration: none;
-  color: #3CC47C;
-  
+  color: #3cc47c;
 }
 
-@media only screen and (min-width:768px) {
+@media only screen and (min-width: 768px) {
   body {
     display: flex;
-    margin: 0;
-    padding: 0;
+    flex-direction: column;
     font-family: "Fira Sans Extra Condensed", sans-serif;
-    position: absolute;
-    background-image: url("https://www.worldatlas.com/r/w728-h425-c728x425/upload/70/32/73/shutterstock-310887800.jpg");
-    background-repeat:no-repeat;
-    background-size:100% 100vh;
-}
-  
-  
+    background: url("https://www.worldatlas.com/r/w728-h425-c728x425/upload/70/32/73/shutterstock-310887800.jpg")
+      no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    width: 100vw;
+    margin-bottom: 0px;
+  }
+
   header {
     font-family: "Courgette", cursive;
     margin: 0px;
     padding: 0px;
     width: auto;
   }
-  .header-container{
-    }
-  
+
   .header-title {
     display: flex;
     justify-content: center;
-    background-color: #1E392A;
+    background-color: #1e392a;
   }
-  
+
   .header-title-link {
     text-decoration: none;
     /* color: #3CC47C; */
-    
   }
-  .header-navigation{
-      display: flex;
-      justify-content: flex-end;
-      text-decoration: none;
-      flex-direction: column;
+  .header-navigation {
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: none;
+    flex-direction: column;
   }
 
   .header-navigation-list {
-      display: flex;
-      text-decoration: none;
-      flex-direction: column;
+    display: flex;
+    text-decoration: none;
+    flex-direction: column;
   }
 
   .header-navigation-list-item {
-      display: flex;
-      text-decoration: none;
-      flex-direction: column;
-      padding: 10px;
-      margin: 10px;
+    display: flex;
+    text-decoration: none;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
   }
-  
-  .main-content{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+
+  .main-content {
+    display: flex;
+    flex-direction: column;
   }
-  
+
+  .img-holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
   .main-content-image {
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
-    height: 150px;
-    width: 150px;
-    margin-top: 20px;
-    margin-left: 20px;
+    height: 15%;
+    width: 15%;
   }
-  
+
   .main-content-section {
     display: flex;
-    /* flex-direction: column; */
-    justify-content: flex-start;
   }
-  
+
   .main-content-title-heading {
     font-family: "Courgette", cursive;
     display: flex;
     justify-content: center;
     margin: 10px;
     padding: 10px;
-    color: #1E392A;
+    color: #1e392a;
     border-radius: 20px;
-    background-color: #828081;
+    background-color: rgba(130, 128, 129, 0.755);
     width: 130px;
     text-align: center;
-   
   }
-  
+
   .main-content-paragraph {
     margin: 10px;
     padding: 10px;
-    color: #1E392A;
-    background-color: #E9C893;
+    color: #1e392a;
+    background-color: #e9c893c8;
     border-radius: 20px;
   }
-  
+
   .main-content-list {
-      display: flex;
-      list-style: none;
-      color: #828081;
-      margin: 10px;
-      padding: 10px;
-      background-color: #E9C893;
-      border-radius: 10px;   
+    display: flex;
+    list-style: none;
+    color: #828081;
+    margin: 10px;
+    padding: 10px;
+    background-color: #e9c893c8;
+    border-radius: 10px;
   }
-  
+
   .purchase {
-      color:  #3CC47C;
-      margin-right: 10px;
+    color: #3cc47c;
+    margin-right: 10px;
   }
 
   .main-content-navigation {
@@ -277,9 +281,8 @@ align-items: center;
     list-style: none;
     margin: 0;
     padding: 0;
-    background-color: #E9C893;
+    background-color: #e9c893c8;
     border-radius: 20px;
-    
   }
 
   .footer-list-item {
@@ -289,22 +292,20 @@ align-items: center;
     bottom: 20px;
   }
 
-  .footer-list-item-buy{
+  .footer-list-item-buy {
     display: flex;
     text-decoration: none;
-    color: #3CC47C;
-    
+    color: #3cc47c;
   }
 
-  .footer-list-item-sell{
+  .footer-list-item-sell {
     display: flex;
     text-decoration: none;
-    color: #3CC47C;
+    color: #3cc47c;
   }
-  .footer-list-item-forum{
+  .footer-list-item-forum {
     display: flex;
     text-decoration: none;
-    color: #3CC47C;
-    
+    color: #3cc47c;
   }
 }
